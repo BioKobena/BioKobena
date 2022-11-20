@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+
+:root{
+    --background-color: #edf2fc;
+    --blue-paul:  #00f;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +14,7 @@
 .hero{
     width: 100%;
     height: 100vh;
-    background: #edf2fc;
+    background: var(--background-color);
     font-family: 'Poppins', sans-serif;
     position: relative;
 }
@@ -34,10 +40,10 @@ nav ul li a{
     color: #606163;
 }
 nav ul li a:hover{
-    color: #ff4321;
+    color: var(--blue-paul);
 }
 .btn{
-    background: #ff4321;
+    background: var(--blue-paul);
     border-radius: 5px;
     padding: 10px 18px;
     text-decoration: none;
@@ -48,8 +54,8 @@ nav ul li a:hover{
 }
 .btn:hover{
     background: transparent;
-    color: #ff4321;
-    border: 1px solid #ff4321;
+    color: var(--blue-paul);
+    border: 1px solid var(--blue-paul);
 }
 .info{
     margin-left: 8%;
@@ -60,7 +66,7 @@ nav ul li a:hover{
     color: #444242;
 }
 .info h1 span{
-   color: #ff4321;
+   color: var(--blue-paul);
 }
 .info p{
     color: #606163;
@@ -99,5 +105,5 @@ nav ul li a:hover{
     margin-right: 20px;
 }
 .social a:hover{
-    color: #ff4321;
+    color: var(--blue-paul);
 }
