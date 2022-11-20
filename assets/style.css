@@ -1,14 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+
+:root{
+    --background-color: #edf2fc;
+    --blue-paul:  #00f;
+    --white-color: #fff;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.hero{
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Scrool bar  */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--white-color);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:var(--blue-paul);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/* Fin du scroll bar */
+
+
+.container_portfolio{
     width: 100%;
     height: 100vh;
-    background: #edf2fc;
+    background: var(--background-color);
     font-family: 'Poppins', sans-serif;
     position: relative;
 }
@@ -34,10 +69,10 @@ nav ul li a{
     color: #606163;
 }
 nav ul li a:hover{
-    color: #ff4321;
+    color: var(--blue-paul);
 }
 .btn{
-    background: #ff4321;
+    background: var(--blue-paul);
     border-radius: 5px;
     padding: 10px 18px;
     text-decoration: none;
@@ -48,19 +83,33 @@ nav ul li a:hover{
 }
 .btn:hover{
     background: transparent;
-    color: #ff4321;
-    border: 1px solid #ff4321;
+    color: var(--blue-paul);
+    border: 1px solid var(--blue-paul);
 }
 .info{
     margin-left: 8%;
     margin-top: 10%;
 }
-.info h1{
+
+.title__biohou{
+    font-size: 20px;
+    color: #444242;
+}
+
+
+.info .person_bio{
     font-size: 40px;
     color: #444242;
 }
-.info h1 span{
-   color: #ff4321;
+.description_bio{
+    width: 64%;
+    font-size: 30px;
+    color: #444242;
+}
+
+
+.info .person_bio span{
+   color: var(--blue-paul);
 }
 .info p{
     color: #606163;
@@ -99,5 +148,176 @@ nav ul li a:hover{
     margin-right: 20px;
 }
 .social a:hover{
-    color: #ff4321;
+    color: var(--blue-paul);
 }
+
+/* A Propos */
+.about_bio{
+    margin-top: 3rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.about_bio .education .heading{
+    text-align: center;
+    font-size: 40px;
+    padding: 2rem;
+}
+  
+  .education .box-container {
+    transform: scale(0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+  
+  .education .box-container .box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+    margin-left: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 3.5rem;
+    padding-bottom: 3rem;
+    border-left: 0.1rem solid #aaa;
+    position: relative;
+  }
+  
+  .education .box-container .box i {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    background: var(--blue-paul);
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: -1rem;
+    left: -2.5rem;
+  }
+  
+  .education .box-container .box span {
+    font-size: 1.7rem;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 1.5rem;
+    background: #000  }
+  
+  .education .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #000;
+    padding-top: 3rem;
+    font-weight: normal;
+  }
+  
+  .education .box-container .box p {
+    font-size: 1.5rem;
+    color: #aaa;
+    line-height: 2;
+  }
+  
+/* Portfolio */
+.portfolio_bio{
+    margin-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(238, 238, 238, 0.664);
+}
+
+  .portfolio .heading{
+    text-align: center;
+    font-size: 40px;
+    padding: 2rem;
+  }
+  
+  .portfolio .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+  
+  .portfolio .box-container .box {
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .portfolio .box-container .box:hover .content {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  
+  .portfolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .portfolio .box-container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1a1a1a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+  
+  .portfolio .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  
+  .portfolio .box-container .box .content p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #aaa;
+  }
+  
+  .portfolio .box-container .box .content a {
+    font-size: 2rem;
+    color: crimson;
+  }
+  
+  .portfolio .box-container .box .content a:hover {
+    color: #fff;
+  }
+/* Fin du portfolio */
