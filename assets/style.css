@@ -76,6 +76,8 @@ nav ul li a:hover{
     border-radius: 5px;
     padding: 10px 18px;
     text-decoration: none;
+    /* position: absolute;
+    right: rem; */
     color: #fff;
     display: inline-block;
     border: 1px solid transparent;
@@ -314,10 +316,16 @@ nav ul li a:hover{
   
   .portfolio .box-container .box .content a {
     font-size: 2rem;
-    color: crimson;
+    color: var(--blue-paul);
+    text-decoration: none;
   }
   
   .portfolio .box-container .box .content a:hover {
     color: #fff;
   }
 /* Fin du portfolio */
+
+.arrow{
+    position: fixed;
+    
+}
