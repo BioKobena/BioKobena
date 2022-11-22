@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="icon" type="image/x-icon" href="./Images/paul_bio.png" />
     <link rel="stylesheet" href="./assets/style.scss">
+    <link rel="stylesheet" href="./assets/aos.css">
 </head>
 <body>
 
@@ -22,13 +23,13 @@
             </ul>
             <a href="#" class="btn">Engagez moi </a>
         </nav>
-        <div class="info">
+        <div class="info" data-aos="fade-up">
             <h1 class="person_bio">Je suis  <span>Bio Paul Kobena</span></h1>
             <h1 class="description_bio">Etudiant en 3 ème année d'informatique de spécialité Systèmes Réseaux Informatiques et Télécommunications </h1>
-            <p>Bienvenue sur mon portfolio officiel<br> mes réalisatons, projets & prix y sont détaillés.</p>
+            <p>Bienvenue sur mon portfolio,<br> mes réalisatons & projets y sont détaillés.</p>
             <a href="./KobenaKoffi_L3_SRIT3A_2022-2023 (1).pdf" class="btn" download target="_blank">Mon CV</a>
         </div>
-        <div class="img-box">
+        <div class="img-box" data-aos="fade-right">
             <img src="./Images/bg-img.png" class="back-img">
             <img src="./Images/portrait_paul.png" class="man-img">
         </div>
@@ -103,16 +104,16 @@
             
                 <div class="box-container">
             
-                    <div class="box">
+                    <div class="box" data-aos="fade-down-right">
                         <img src="./Images/Menu.svg" alt="">
                         <div class="content">
                             <h3>projet 01</h3>
                             <p>Ce projet consiste en la réalisation d'une maquette application mobile pour Salon de coiffure.</p>
-                            <a href="./Images/Vue spéciale.svg">voir plus</a>
+                            <a href="./Images/Vue spéciale.svg" target="_blank">voir plus</a>
                         </div>
                     </div>
             
-                    <div class="box">
+                    <div class="box" data-aos="fade-down-right">
                         <img src="./Images/First.svg" alt="">
                         <div class="content">
                             <h3>projet 02</h3>
@@ -120,16 +121,17 @@
                                 Hackathon organisé par l'ESATIC sur le thème de : Nouveau système de paiement
                                 électronique.
                             </p>
-                            <a href="./Images/Hack.svg">voir plus</a>
+                            <a href="./Images/Hack.svg" target="_blank">voir plus</a>
                         </div>
                     </div>
                    
                     <div class="box">
-                        <img src="./Images/faq.jpeg" alt="">
+                        <img src="./Images/faq.jpeg">
                         <div class="content">
                             <h3>projet 03</h3>
                             <p>
                                 Ceci est une Foire Aux Questions, réalisé comme projet personnel dans le but de la maitrise des langages de programmation appris.
+                                Responsive et flexible.
                             </p>
                             <a href="https://faqkobena.netlify.app/" target="_blank">voir plus</a>
                         </div>
@@ -142,7 +144,7 @@
                             <p>
                                 Ceci est l'un de mes premiers clones de site. Ceci est le site de Docplaner.
                             </p>
-                            <a href="https://clonedocplaner.netlify.app/">voir plus</a>
+                            <a href="https://clonedocplaner.netlify.app/" target="_blank">voir plus</a>
                         </div>
                     </div>
             
@@ -151,7 +153,7 @@
                         <div class="content">
                             <h3>projet 05</h3>
                             <p>Projet personnel de commercialisation de plantes, vente et conseil d'utilisation des plantes.</p>
-                            <a href="https://sorelle.netlify.app/">voir plus</a>
+                            <a href="https://sorelle.netlify.app/" target="_blank">voir plus</a>
                         </div>
                     </div>
             
@@ -162,7 +164,7 @@
                             <p>
                                 Clone d'un site de présentation de vehicule.
                             </p>
-                            <a href="https://clonecar.netlify.app/">voir plus</a>
+                            <a href="https://clonecar.netlify.app/" target="_blank">voir plus</a>
                         </div>
                     </div>
             
@@ -178,5 +180,14 @@
         
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="./script/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 3000, 
+            }
+        );
+      </script>
 </body>
 </html>
