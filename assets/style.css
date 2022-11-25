@@ -46,6 +46,8 @@ html{
     background: var(--background-color);
     font-family: 'Poppins', sans-serif;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 nav{
     width: 84%;
@@ -78,7 +80,7 @@ nav ul li a:hover{
     text-decoration: none;
     /* position: absolute;
     right: rem; */
-    color: #fff;
+    color: var(--white-color);
     display: inline-block;
     border: 1px solid transparent;
     transition: all 0.4s ease;
@@ -199,7 +201,7 @@ nav ul li a:hover{
     font-size: 1.7rem;
     border-radius: 50%;
     background: var(--blue-paul);
-    color: #fff;
+    color: var(--white-color);
     text-align: center;
     position: absolute;
     top: -1rem;
@@ -208,7 +210,7 @@ nav ul li a:hover{
   
   .education .box-container .box span {
     font-size: 1.7rem;
-    color: #fff;
+    color: var(--white-color);
     border-radius: 5rem;
     padding: .5rem 1.5rem;
     background: #000  }
@@ -229,16 +231,19 @@ nav ul li a:hover{
   
 /* Portfolio */
 .portfolio_bio{
-    margin-top: 5rem;
-    width: 100%;
-    height: 100vh;
     background-color: rgba(238, 238, 238, 0.664);
+    margin-top: 7rem;
+    width: 100%;
+    /* height: 100vh; */
+   
 }
 
-  .portfolio .heading{
+  .portfolio .heading, #contacts .heading{
+    margin-bottom: -5rem;
     text-align: center;
     font-size: 40px;
     padding: 2rem;
+    z-index: 1;
   }
   
   .portfolio .box-container {
@@ -302,7 +307,7 @@ nav ul li a:hover{
   
   .portfolio .box-container .box .content h3 {
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--white-color);
     text-transform: uppercase;
     font-weight: normal;
   }
@@ -321,11 +326,146 @@ nav ul li a:hover{
   }
   
   .portfolio .box-container .box .content a:hover {
-    color: #fff;
+    color: var(--white-color);
   }
 /* Fin du portfolio */
 
 .arrow{
     position: fixed;
     
+}
+
+
+/* Contacts */
+/* Formulaire */
+.section-5 {
+    width: 100%;
+    /* height: 100vh; */
+    /* margin-top: 60rem; */
+    background: var(--white-color);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+    /* bottom: 7rem; */
+    box-shadow: 1rem 1rem 1rem #eee;
+}
+
+.contact-form {
+    width: 50rem;
+    height: 50rem;
+    /* background-color: rgb(228, 228, 228); */
+    /* background-color: var(--background-color); */
+    border: 2rem solid var(--blue-paul);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    height: 4rem;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    /* background-color: var(--background-color); */
+    padding: 0.5rem;
+    border: 0.1rem solid var(--blue-paul);
+    letter-spacing: 0.1rem;
+    color: #000;
+    flex-shrink: 0;
+    transition: background-color 0.5s;
+}
+
+.contact-form textarea {
+    max-width: 100%;
+    min-width: 8rem;
+}
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 0.336);
+    /* border: 0.1rem solid #00f; */
+    /* background-color: red; */
+}
+
+.contact-form .form-btn {
+    background-color: var(--blue-paul);
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+/* fin du formulaire */
+/* Fin du contacts */
+
+
+
+/* Footer Accueil*/
+.footer {
+    margin-top: 2rem;
+    width: 100%;
+    height: 5rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0rem;
+    z-index: 1000;
+    text-align: center;
+    /* margin-bottom: -15rem; */
+    
+  }
+  
+  .footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .copyright {
+    font-size: 1rem;
+    color: #a7a7a7;
+  }
+  
+  .social-list a {
+    margin: 0 2rem;
+  }
+  
+  .social-list i {
+    font-size: 2rem;
+    color: #a7a7a7;
+  }
+
+  .social-list i:hover{
+      color: var(--blue-paul);
+  }
+/* Fin du footer accueil */
+
+#contacts .heading{
+   /* padding: 1rem; */
+   margin-bottom: 0.1rem;
+}
+
+#accueil{
+    width: 3rem;
+    height: 3rem;
+    z-index: 100;
+    font-size: 2rem;
+    border-radius: 0.3rem;
+    position: fixed;
+    right: 2rem;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-paul);
+    color: var(--white-color);
+    box-shadow: 1rem 1rem 1rem #eee;
 }

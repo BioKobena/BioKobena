@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+:root {
+    --primary-color: #6edae6;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+/* Style de la barre de navigation */
+#navbar {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background: #003D34;
+    position: fixed;
+    z-index: 10;
+    /* margin-top: -3rem; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #fff;
+    margin-left: -8rem;
+    margin-top: 1rem;
+    animation: logo infinite 5s ease-in;
+}
+
+
+@keyframes logo {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.35);
+    }
+    
+}
+
+
+.navbar-link {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 0rem;
+    color: #fff ;
+    animation: border-radius 1s;
+    transition: transform 0.4s;
+}
+
+.navbar-link:hover {
+    transform: scale(1.25);
+    /* height: 2.5rem;
+    background-color: #003D34;
+    border: 0.4rem solid #fff;
+    border-radius: 20rem; */
+}
+/* Fin du style de la barre de navigation */
+
+/* Formulaire */
+.section-5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(images/plantes.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+    /* margin-top: 7rem; */
+}
+
+.contact-form {
+    width: 50rem;
+    height: 50rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2rem solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    height: 4rem;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    background-color: #ecf0f1;
+    padding: 0.5rem;
+    border: 0.1rem solid #fff;
+    letter-spacing: 0.1rem;
+    color: #000;
+    flex-shrink: 0;
+    transition: background-color 0.5s;
+}
+
+.contact-form textarea {
+    max-width: 100%;
+    min-width: 8rem;
+}
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: red; */
+}
+
+.contact-form .form-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.paragraph{
+    font-size: 1.8rem;
+    margin-top: 9rem;
+}
+/* fin du formulaire */
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 10rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70rem;
+  }
+  
+  .footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .copyright {
+    font-size: 1.3rem;
+    color: #a7a7a7;
+  }
+  
+  .social-list a {
+    margin: 0 2rem;
+  }
+  
+  .social-list i {
+    font-size: 1.3rem;
+    color: #a7a7a7;
+  }
+
+  .social-list i:hover{
+      color: #003D34;
+  }
+
+  /* Fin du footer */

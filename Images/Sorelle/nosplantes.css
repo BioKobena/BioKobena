@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+
+html{
+    overflow-x: hidden;
+}
+
+#navbar {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background: #003D34;
+    position: fixed;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #fff;
+    margin-left: -8rem;
+    margin-top: 1rem;
+    animation: logo infinite 5s ease-in;
+}
+
+
+@keyframes logo {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.35);
+    }
+    
+}
+
+
+.navbar-link {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 0rem;
+    color: #fff ;
+    animation: border-radius 1s;
+    transition: transform 0.4s;
+}
+
+.navbar-link:hover {
+    transform: scale(1.25);
+    /* height: 2.5rem;
+    background-color: #003D34;
+    border: 0.4rem solid #fff;
+    border-radius: 20rem; */
+   
+}
+
+
+.cards-plants{
+    width: 100%;
+    height: 240rem;
+    display: flex;
+    flex-direction: column;
+    /* background: url(images/); */
+    background: #003D34;
+    background-size: cover;
+}
+
+.cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:1rem;
+    flex-wrap: wrap;
+}
+
+.image{
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.card{
+   width: 27%;
+   height: 50rem;
+   margin-top: -1rem;
+   margin-right: 2rem;
+   display: flex;
+   flex-direction: column;
+   /* border: 0.7rem solid #eaea; */
+   padding: 1rem;
+   background-color: #fff;
+   border-radius: 2rem;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   cursor: pointer;
+   transition: transform 0.5s;
+}
+
+.card:hover{
+    transform: translateY(-2rem);
+}
+
+.text{
+    width: 90%;
+    color: #000;
+    font-size: 1.2rem;
+    /* margin-top: 0.5rem; */
+    /* text-align: center; */
+    /* flex-wrap: wrap; */
+    margin-bottom: 1rem;
+}
+
+.prix{
+    font-size: 2rem;
+    color: #aaa;
+}
+
+.nom_plante{
+    font-size: 2rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.titre{
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.lire{
+    width: 15rem;
+    padding: 0.5rem;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    border: none;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+   cursor: pointer;
+}
+
+.lire:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 1px 2px 3px, rgba(0, 0, 0, 0.24) 2px 2px 2px;
+}
+
+/* Footer Accueil*/
+.footer {
+    width: 100%;
+    height: 10rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 240rem;
+  }
+  
+  .footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .copyright {
+    font-size: 1.3rem;
+    color: #a7a7a7;
+  }
+  
+  .social-list a {
+    margin: 0 2rem;
+  }
+  
+  .social-list i {
+    font-size: 1.3rem;
+    color: #a7a7a7;
+  }
+
+  .social-list i:hover{
+      color: #003D34;
+  }
+/* Fin du footer accueil */
+
