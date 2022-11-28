@@ -426,7 +426,7 @@ nav ul li a:hover{
   .footer-content {
     width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .copyright {
@@ -461,11 +461,30 @@ nav ul li a:hover{
     border-radius: 0.3rem;
     position: fixed;
     right: 2rem;
-    z-index: 100;
+    bottom: 2rem;
+    z-index: 10000;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--blue-paul);
     color: var(--white-color);
-    box-shadow: 1rem 1rem 1rem #eee;
+    cursor: pointer;
+}
+
+#accueil i{
+  color: var(--white-color);
+}
+
+
+
+.other{
+  width: 100%;
+  /* display: flex; */
+  font-size: 2rem;
+  text-align: center;
+}
+
+.projects{
+ position: relative;
+ top: -7rem;
 }
