@@ -1,3 +1,10 @@
-# Portfolio
+# Bio Paul Kobena
 
-Ce README.md vous donne tous les détails sur mon portfolio.
+Salut 👋, Je suis Bio Paul Kobena.
+Passionné de Développement Web & Mobile et des nouvelles technologies dans le domaine de : 
+- Blockchain
+- Intelligence Artificielle 
+- IOT
+- AR/VR
+
+
