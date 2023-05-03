@@ -7,4 +7,3 @@ Passionné de Développement Web & Mobile et des nouvelles technologies dans le 
 - IOT
 - AR/VR
 
-
