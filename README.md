@@ -6,7 +6,8 @@ Passionné de Développement Web & Mobile et des nouvelles technologies dans le 
 - Intelligence Artificielle 
 - IOT
 - AR/VR
-- Cybersécurité![js2](https://github.com/BioKobena/BioKobena/assets/118639441/3a47b55b-45dc-4590-8523-df4e66c8a48f)
+- Cybersécurité
+![js2](https://github.com/BioKobena/BioKobena/assets/118639441/3a47b55b-45dc-4590-8523-df4e66c8a48f)
 
 
 
