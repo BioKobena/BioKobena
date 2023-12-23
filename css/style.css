@@ -14624,11 +14624,6 @@ a {
   transition: .5s;
 }
 
-.service-item:hover .service-icon {
-  /* color: rgba(0, 0, 0, 0.6); */
-  background: url(../images/portfolio-bio.png) center center no-repeat;
-  background-size: cover;
-}
 
 
 .service-item h5,
